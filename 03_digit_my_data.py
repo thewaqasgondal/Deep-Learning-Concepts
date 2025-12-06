@@ -78,7 +78,7 @@ with zipfile.ZipFile(zip_path, 'r') as zf:
             ax.set_title(f'Label: {label}')
             ax.axis('off')
         plt.tight_layout()
-        plt.savefig('kaggle_digits_samples.png')
+        plt.savefig('output/kaggle_digits_samples.png')
         plt.show()
 
     # Overall dataset info
@@ -96,5 +96,5 @@ with zipfile.ZipFile(zip_path, 'r') as zf:
     plt.ylabel('Count')
     plt.title('Class Distribution (Kaggle Digits)')
     plt.xticks(digits)
-    plt.savefig('kaggle_class_distribution.png')
+    plt.savefig('output/kaggle_class_distribution.png')
     plt.show()

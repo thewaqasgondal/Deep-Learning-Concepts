@@ -24,7 +24,7 @@ for i, ax in enumerate(axes.flat):
     ax.set_title(f'Label: {digits.target[i]}')
     ax.axis('off')
 plt.tight_layout()
-plt.savefig('digits_samples.png')
+plt.savefig('output/digits_samples.png')
 plt.show()
 
 # Data preprocessing
@@ -53,7 +53,7 @@ plt.xlabel('Digit')
 plt.ylabel('Count')
 plt.title('Class Distribution')
 plt.xticks(unique)
-plt.savefig('class_distribution.png')
+plt.savefig('output/class_distribution.png')
 plt.show()
 
 print("\nClass distribution:")
